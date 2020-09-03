@@ -1,0 +1,44 @@
+#userInp{
+	width: 80%;
+	
+	
+}
+#searchBtn{
+	width: 18%;
+	
+}
+
+#result-container{
+	height: 100vh;
+	 display: grid;
+	 grid-template-areas: 
+	 "r r r"
+	 ;
+    grid-template-columns: repeat(3, 1fr);
+ 
+}
+
+#recipe-template{
+	grid-area: r;
+	padding: 3px;
+}
+
+img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 100px;
+	position: relative;
+	left: 120px;
+	
+}
+
+ #placeholder{
+	 padding: 30px;
+ }
+ 
+ a{
+	 display: block;
+	 text-align: center;
+ }
+

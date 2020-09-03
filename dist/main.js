@@ -1,13 +1,14 @@
+const Rend = new Renderer()
 $('#searchBtn').on('click', function(){
 	let userInp = $('#userInp').val()
 
 $.get(`/recipes/${userInp}`, function(data){
-	// $('#result-container').empty()
 
-	// const source = $('#recipe-template').html();
-	// const template = Handlebars.compile(source)
-	// const newHTML = template({recipe: data})
-	// 		$('#result-container').append(newHTML)
-	
+	Rend.render(data)
 })
+})
+
+$('#result-container').on('click','img', function(){
+	let firstIng = $(this).closest('#placeholder').find('li').html()
+	alert(firstIng)
 })
